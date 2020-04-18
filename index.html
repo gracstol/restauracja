@@ -9,26 +9,95 @@
     <meta name="description" content="Zapraszamy do najlepszej restauracji z polską kuchnią w Warszawie!">
     <meta name="veiwport" content="width=device-width, initial scale=1.0">
 
+    <!-- Style.css file -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Pomocny link, zgłębij to-->
+    <!-- Normalize file -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
     integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous">
 
+    <!-- Fonts link -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap">
 
 </head>
 
 <body>
 
+    <nav class="main-nav">
+        <div class="main-nav__inner">
+
+            <div class="main-nav__logo">
+
+            <a href="#" class="main-nav__logo-link">
+                <img src="/images/logo.svg" alt="logo" class="main-nav__logo-image">
+                Polskie smaki
+            </a>
+            
+             </div>
+
+            <ul class="main-nav__menu">
+                <li class="main-nav__menu-item" js-main-nav__menu-item>
+                    <a href="#" class="main-nav__link">
+                        Home
+                    </a>
+                </li>
+                <li class="main-nav__menu-item">
+                    <a href="#about" class="main-nav__link">
+                        O nas
+                    </a>
+                </li>
+                <li class="main-nav__menu-item">
+                    <a href="#menu" class="main-nav__link">
+                        Menu
+                    </a>
+                </li>
+                <li class="main-nav__menu-item">
+                    <a href="#gallery" class="main-nav__link">
+                        Galeria
+                    </a>
+                </li>
+                <li class="main-nav__menu-item">
+                    <a href="#kontakt" class="main-nav__link">
+                        Kontakt
+                    </a>
+                </li>
+                <li class="main-nav__menu-item">
+                    <a href="#map" class="main-nav__link">
+                        Jak dojechać
+                    </a>
+                </li>
+                <li class="main-nav__menu-item">
+                    <a href="https://www.instagram.com/" target="_blank" class="main-nav__link">
+                        <img src="/images/icons/social/instagram.svg" alt="instagram" class="main-nav__social-icon">
+                    </a>
+                </li>
+                <li class="main-nav__menu-item">
+                    <a href="https://www.facebook.com/" target="blank" class="main-nav__link">
+                        <img src="/images/icons/social/facebook.svg" alt="facebook" class="main-nav__social-icon">
+                    </a>
+                </li>
+
+            </ul>
+
+            <button class="main-nav__mobile-button" js-main-nav__mobile-button>
+                <img src="/images/icons/navigation.svg" alt="Otwórz / zamknij nawigację" class="main-nav__mobile-button-image">
+
+            </button>
+
+        </div>
+    </nav>
+
+    <script src="/main-navigation.js"></script>
+
+
     <section class="main-banner">
-        <a href="#about-us" class="main-banner__button">
+        <a href="#about" class="main-banner__button">
             Poznaj nas lepiej
         </a>
     </section>
 
 
-    <!-- About us-->
+    <!-- About us section -->
     <div class="container" id="about">
         <section class="about">
             <div class="about__text">
