@@ -1,0 +1,55 @@
+.about 
+{
+    display: flex;
+    color: #333;
+    align-items: center;
+}
+
+.about__text 
+{
+    padding: 20px;
+}
+
+.about__header 
+{
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+@media (min-width: 840px) 
+{
+    .about__header 
+    {
+        font-size: 2em;
+    }
+}
+
+.about__paragraph 
+{
+    font-size: 1em;
+    line-height: 1.2;
+    color: #aaa;
+}
+
+@media (min-width: 840px) 
+{
+    .about__paragraph 
+    {
+        font-size: 1.3em;
+        line-height: 1.4;
+    }
+}
+
+.about__image 
+{
+    display: none;
+}
+
+@media (min-width: 840px) 
+{
+    .about__image
+    {
+        display: block;
+        width: 40%;
+    }
+}

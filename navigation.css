@@ -1,0 +1,176 @@
+.main-nav
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0, 0, 0, 0.5);
+    padding: 20px;
+    z-index: 1;
+}
+
+.main-nav__logo-image
+{
+    width: 70px;
+    margin-right: 20px;
+}
+
+@media (max-width: 999px)
+{
+    .main-nav__logo-image
+    {
+        width: 40px;
+        margin-right: 10px;
+    }
+}
+
+.main-nav__social-icon
+{
+    width: 16px;
+}
+
+.main-nav__inner
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.main-nav__logo-link
+{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+}
+
+@media (max-width: 999px)
+{
+    .main-nav__logo-link
+    {
+        font-size: 28px;
+    }
+}
+
+.main-nav__menu
+{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    transition: 0.5s;
+    transition-property: opacity, transform;
+
+}
+
+@media (max-width: 991px)
+{
+    .main-nav__menu
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-50%);
+    }
+}
+
+@media (max-width: 991px)
+{
+    .main-nav__menu--open
+    {
+        opacity: 1;
+        pointer-events: unset;
+        transform: unset;
+    }
+}
+
+.main-nav__menu-item
+{
+    margin-left: 40px;
+    padding: 5px 0px;
+}
+
+@media (max-width: 1199px)
+{
+    .main-nav__menu-item
+    {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 991px)
+{
+    .main-nav__menu-item
+    {
+       margin-left: 0;
+       padding: 5px 0;
+    }
+}
+
+.main-nav__menu-item:hover
+{
+    border-bottom: 2px solid white;
+}
+
+@media (max-width: 991px)
+{
+    .main-nav__menu-item:hover
+    {
+       border-bottom: unset;
+    }
+}
+
+.main-nav__link
+{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@media (max-width: 991px)
+{
+    .main-nav__link
+    {
+        font-size: 22px;
+    }
+}
+
+
+.main-nav__mobile-button
+{
+    display: none;
+}
+
+@media (max-width: 991px)
+{
+    .main-nav__mobile-button
+    {
+        display: unset;
+        background: none;
+        border: none;
+        padding: 0;
+
+    }
+}
+
+@media (max-width: 991px)
+{
+    .main-nav__mobile-button-image
+    {
+       width: 25px;
+       display: block;
+    }
+}
