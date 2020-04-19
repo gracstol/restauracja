@@ -49,3 +49,8 @@ body
     max-width: 100%;
     padding: 20px; 30px;
 }
+
+.container--smaller
+{
+    width: 940px;
+}
